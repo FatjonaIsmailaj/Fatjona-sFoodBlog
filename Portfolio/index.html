@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>MY FOOD BLOG</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/670fe323e3.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+	
+	<!--JQuery-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<!--LightBox-->
+	<link href="lightbox/src/css/lightbox.css" rel="stylesheet" />
+	<script src="lightbox/src/js/lightbox.js"></script>
+
+     <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+   
+</head>
+<body >
+	<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+	<div  class="container-fluid">
+		<div class="row" id="rowDisplay">
+			<div id="navBar" class="col-lg-3 vh-lg-100 left">
+				<!-- <h2>left block</h2> -->
+				<div class="logo">
+					<img src="cupcake.png" alt="Logo" class="img-fluid d-s-none d-lg-none my-2">
+					<h1>Food Blog</h1>
+				</div>
+				<nav class="navbar navbar-expand-lg navbar-dark ">
+  					<div class="container-fluid">	    				
+	    				 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+			    		<span class="navbar-toggler-icon"></span>
+			  			</button>
+	    				<div class="collapse navbar-collapse" id="navbarText">
+	      					<ul class="navbar-nav mr-auto navbar-right flex-column">
+	      						<li>  <img id="logoLg" src="cupcake.png" alt="Logo" class="img-fluid d-none d-lg-inline-block mt-4 p-1"></li>
+						        <li><a class="nav-link" aria-current="page" href="#home">Home</a></li>
+						        <li><a class="nav-link" href="Desserts.html">Desserts</a></li>
+						        <li><a class="nav-link" href="#gallery">Gallery</a></li>
+						        <li><a class="nav-link" href="#contact" >Contact me</a></li>
+						        
+	     					</ul>
+	    				</div>
+  					</div>
+				</nav>
+			</div>
+
+			<div id="main" class="col-lg-9 right">				
+				<!-- <h2>right block</h2> -->
+					<figure>
+						<img src="neaty-01.jpg" alt="Pie" class="img-fluid w-100 h-100">
+					</figure> 
+					<div class="contentRight">
+					<h2>Welcome to my blog!</h2>
+					<br>
+					<div class="content">
+						<section id="home" class="sections">
+							<p>
+								Welcome to my web site! Here you can find a collection of different desserts with a description and probably their recepie.
+								The word "dessert" originated from the French word desservir, meaning "to clear the table." Its first known use was in 1600, in a health education manual entitled Naturall and artificial Directions for Health, written by William Vaughan. In his A History of Dessert (2013), Michael Krondl explains that it refers to the fact that dessert was served after the table had been cleared of other dishes. The term dates from the 14th century but attained its current meaning around the beginning of the 20th century, when "service à la française" (setting a variety of dishes on the table at the same time) was replaced with "service à la russe" (presenting a meal in courses).
+							</p>
+						</section>
+						<section id="newPostCarousel" class="sections">
+							
+							<div class="row">
+								<div class="col-lg-7 d-block d-lg-inline-block newPost">
+									<h3>New Post</h3>
+									<figure>
+										<a href="cheescake.jpg" data-lightbox="cheescake">
+											<img src="cheescake.jpg" class="img-fluid d-block d-lg-inline-block img-thumbnail" alt="cheescake">
+										</a>
+										<figcaption>
+											Cheesecake is a sweet dessert consisting of one or more layers. The main, and thickest, layer consists of a mixture of a soft, fresh cheese (typically cottage cheese, cream cheese or ricotta), eggs, and sugar. If there is a bottom layer, it most often consists of a crust or base made from crushed cookies (or digestive biscuits), graham crackers, pastry, or sometimes sponge cake. Cheesecake may be baked or unbaked (and is usually refrigerated).
+
+										Cheesecake is usually sweetened with sugar and may be flavored in different ways. Vanilla, spices, lemon, chocolate, pumpkin, or other flavors may be added to the main cheese layer. Additional flavors and visual appeal may be added by topping the finished dessert with fruit, whipped cream, nuts, cookies, fruit sauce, chocolate syrup, or other ingredients.</figcaption>
+									</figure>
+								</div>
+								<div class="col-lg-3 carouselDiv">
+									<h3>Are you hungry?</h3>
+									<div id="carouselImages" class="carousel" data-ride="carousel">
+									  	<div class="carousel-inner">
+										    <div class="carousel-item active">
+										    	<a href="boul.jpg" data-lightbox="carousel">
+										      		<img class="d-block w-100 img-thumbnail imgC "  alt="bowl with fruits" src="boul.jpg" >
+										      	</a>
+										    </div>
+										    <div class="carousel-item">
+										    	<a href="pandoro.jpg" data-lightbox="carousel">
+										      		<img class="d-block img-thumbnail w-100 imgC" src="pandoro.jpg" alt="pandoro" >
+										      	</a>
+										    </div>
+										    <div class="carousel-item">
+										    	<a href="coffee.jpg" data-lightbox="carousel">
+										      		<img class="d-block img-thumbnail w-100 imgC" src="coffee.jpg" alt="coffee" >
+										  		</a>
+										    </div>
+									  	</div>
+									  	<a class="carousel-control-prev" href="#carouselImages" role="button"  data-slide="prev">
+									    	<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									    	<span class="sr-only">Previous</span>
+									  	</a>
+									  	<a class="carousel-control-next" href="#carouselImages" role="button" data-slide="next">
+									    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									    	<span class="sr-only">Next</span>
+									  	</a>
+									</div>
+								</div>
+							</div>
+						</section>
+						<section id="gallery" class="sections">							
+							<div class="row">
+								<h3>My Gallery</h3>
+                                    <div class="d-md-inline-block col-md-2">
+                                        <a href="torta.jpg" data-lightbox="gallery"><img src="torta.jpg" alt="birthday cake" class="img-fluid tm-img-tn"></a>    
+                                    </div>
+                                    <div class="d-md-inline-block col-md-2">
+                                        <a href="slice.jpg" data-lightbox="gallery"><img src="slice.jpg" alt="sclice of cake" class="img-fluid tm-img-tn"></a>    
+                                    </div>
+                                    <div class="d-md-inline-block col-md-2">
+                                        <a href="chocolate.jpg" data-lightbox="gallery"><img src="chocolate.jpg" alt="chocollate bomb" class="img-fluid tm-img-tn"></a>    
+                                    </div>
+                                    <div class="d-md-inline-block col-md-2">
+                                        <a href="macaron.jpg" data-lightbox="gallery"><img src="macaron.jpg"  alt="Macarons" class="img-fluid tm-img-tn"></a>    
+                                    </div>
+                                    <div class="d-md-inline-block col-md-2">
+                                        <a href="apple.jpg" data-lightbox="gallery"><img src="apple.jpg" alt="apples" class="img-fluid tm-img-tn"></a>    
+                                    </div>                                    
+                                </div>
+						</section>
+						<section id="contact" class="sections">
+		                    <h3 >Contact Me</h3>
+		                    <div>
+			                    <div class="row">
+			                        <div class="col-lg-6">
+			                            <form action="#contact" id="fr1" method="post" class="contact-form">
+			                                <div class="form-group">
+			                                    <input type="text" id="contact_name" name="contact_name" class="form-control" placeholder="Name" required="">
+			                                </div><br>
+			                                <div class="form-group">
+			                                    <input type="text" id="object" name="object" class="form-control" placeholder="Object" required="">
+			                                </div><br>
+			                                <div class="form-group">
+			                                    <textarea id="contact_message" name="contact_message" class="form-control" rows="9" placeholder="Message" required=""></textarea>
+			                                </div><br>                                      
+			                                <button  id="bt1" value="click" class="float-right tm-button">Send</button>
+			                            </form>    
+			                        </div>
+			                        
+			                        <div class="col-lg-6 tm-contact-right">
+			                            <p>
+			                              Write me an email if you are interested to know more about this site and how i have created it!
+			                            </p>
+			                            <p>
+			                                Street:<br>
+			                                City:<br>
+			                                CAP:<br>
+			                                Italy
+
+			                            </p>
+			                        </div>
+			                    </div>
+			                </div>
+						</section>	
+					</div>				
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+	<script type="text/javascript">			
+		//Get the button:
+		mybutton = document.getElementById("myBtn");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		  	console.log="here";
+		    mybutton.style.display = "block";
+		  } else {
+		    mybutton.style.display = "none";
+		  }
+		}
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0; // For Safari
+		  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+		}
+
+		var object= document.getElementById('object').innerHTML;	
+		var message=document.getElementById('contact_message').innerHTML;
+		console.log(object);
+
+		$(document).ready(function() {
+		    $('#bt1').click(function() {
+		        $('#fr1').attr('action',
+		                       'mailto:foodblog@email.com?subject=' +
+		                       $('#object').val() + '&body=' + $('#contact_message').val());
+		        $('#fr1').submit();
+		    	
+		    });
+		});
+	</script>
+
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha2/js/bootstrap.min.js" integrity="sha384-5h4UG+6GOuV9qXh6HqOLwZMY4mnLPraeTrjT5v07o347pj6IkfuoASuGBhfDsp3d" crossorigin="anonymous"></script>
+</body>
+</html>
